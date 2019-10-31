@@ -1,0 +1,13 @@
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+export const SIGN_IN_FAIL = 'SIGN_IN_FAIL';
+export const SIGN_UP = 'SIGN_UP';
+export const SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
+export const SIGN_UP_FAIL = 'SIGN_UP_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const TYPE_IN_LOGIN = 'TYPE_IN_LOGIN';
+export const TYPE_IN_USERNAME = 'TYPE_IN_USERNAME';
+export const TYPE_IN_PASSWORD = 'TYPE_IN_PASSWORD';
+export const TYPE_IN_EMAIL = 'TYPE_IN_EMAIL';
+export const TOKEN_UPDATED = 'TOKEN_UPDATED';
+export const TOKEN_ABSENT = 'TOKEN_ABSENT';
