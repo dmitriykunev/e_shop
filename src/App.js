@@ -15,7 +15,7 @@ class App extends Component {
       {/*</header>*/}
       {/*<Chat />*/}
       {/*  <SignIn/>*/}
-        { this.props.history.push('/signIn')}
+        { this.props.history.push('/signUp')}
       </div>
     )
   }
