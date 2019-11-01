@@ -14,11 +14,11 @@ const products = [
   { name: 'Доставка', desc: '', price: 'Бесплатно' },
 ];
 const addresses = ['Шевченка 21 кв. 51', 'Киевский район', 'Харьков', '61000', 'Украина'];
-const payments = [
-  { name: 'Тип карты', detail: 'Visa' },
-  { name: 'владелец карты', detail: 'Mr John Smith' },
-  { name: 'Номер карты', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Срок действия карты', detail: '04/2024' },
+const shipping = [
+  { name: 'Отделение Новой Почты', detail: '42' },
+  { name: 'Получатель', detail: 'Джон Смит' },
+  { name: 'Область', detail: 'Харьковская' },
+  { name: 'Город', detail: 'Харьков' },
 ];
 
 const useStyles = makeStyles(theme => ({
@@ -58,23 +58,23 @@ export default function Review() {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <Typography variant="h6" gutterBottom className={classes.title}>
-            Доставка
+            Получатель
           </Typography>
-          <Typography gutterBottom>John Smith</Typography>
+          <Typography gutterBottom>Джон Смит</Typography>
           <Typography gutterBottom>{addresses.join(', ')}</Typography>
         </Grid>
         <Grid item container direction="column" xs={12} sm={6}>
           <Typography variant="h6" gutterBottom className={classes.title}>
-            Детали оплаты
+            Доставка
           </Typography>
           <Grid container>
-            {payments.map(payment => (
-              <React.Fragment key={payment.name}>
+            {shipping.map(el => (
+              <React.Fragment key={el.name}>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.name}</Typography>
+                  <Typography gutterBottom>{el.name}</Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.detail}</Typography>
+                  <Typography gutterBottom>{el.detail}</Typography>
                 </Grid>
               </React.Fragment>
             ))}

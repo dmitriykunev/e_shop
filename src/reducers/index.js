@@ -16,11 +16,10 @@ import {
   
   const initialState = {
     userName: '',
-    login: '',
     email: '',
     password: '',
     token: '',
-    role: 'user',
+    products: [],
     error: ''
   };
   
