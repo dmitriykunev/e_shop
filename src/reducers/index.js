@@ -20,6 +20,8 @@ import {
     password: '',
     token: '',
     products: [],
+    addresses: [],
+    shipping: [],
     error: ''
   };
   
