@@ -1,36 +1,79 @@
 body {
-  font: 12pt Roboto, Arial, Helvetica;
+  font-family: Roboto, "sans-serif";
+  height: auto;
+  width: auto;
   background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: grid;
+  background-color: #006847;
+  grid-template-areas: 
+  ". phone info upMiddle upHeaderRight"
+  ". menu logo account cart";
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25px 40px;
+}
+
+.phone {
+  grid-area: phone;
+  background-color: #006847;
+  color: #ffffff;
+  font: 14px Roboto, sans-serif;
+  padding: 5px;
+}
+
+.info {
+  grid-area: info;
+  background-color: #006847;
+  color: #ffffff;
+  font: 14px Roboto, sans-serif;
+  padding: 5px;
+}
+
+a.topbar {
+  color: #c3e5d4;
+}
+
+.upMiddle {
+  grid-area: upMiddle;
+  background-color: #ffffff;
+}
+
+.upHeaderRight {
+  grid-area: upHeaderRight;
+  background-color: #333333;
+}
+
+.menu {
+  grid-area: menu;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+}
+
+.account {
+  grid-area: account;
+  justify-self: end;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.cart {
+  grid-area: cart;
+  color: #ffffff;
+  padding: 5px;
 }
 
 .content {
-  width: 800px;
-  margin: auto;
-  background: black;
-  float: right;
-}
-
-.sidebar {
-  margin-top: 10px;
-  width: 150px;
-  padding: 0 10px;
-  float: left;
-  background: yellow;
+  display: grid;
 }
 
 .footer {
-  background: grey;
-  
-}
-
-#grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header"
-  "nav content content"
-  "footer footer footer";
-  height: 100vh;
-  margin: 0;
 }
-
