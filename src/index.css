@@ -12,62 +12,91 @@ body {
   grid-template-areas: 
   ". phone info upMiddle upHeaderRight"
   ". menu logo account cart";
-  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25px 40px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 30px 30px;
 }
 
 .phone {
   grid-area: phone;
+  /* justify-self: center; */
   background-color: #006847;
   color: #ffffff;
   font: 14px Roboto, sans-serif;
+  /* margin-left: 5px; */
   padding: 5px;
+  grid-column: 2 / 5;
 }
 
 .info {
   grid-area: info;
+  justify-self: center;
   background-color: #006847;
   color: #ffffff;
   font: 14px Roboto, sans-serif;
   padding: 5px;
+  grid-column: 5 / 9;
 }
 
 a.topbar {
   color: #c3e5d4;
 }
 
+.rotateRight {
+  background-color: aqua;
+  /* display: block; */
+  width: 25px;
+  transform: rotate(45deg);
+  }
+
 .upMiddle {
   grid-area: upMiddle;
+  justify-self: center;
   background-color: #ffffff;
+  grid-column: 9 / 13;
+}
+
+.rotateLeft {
+  background-color: aqua;
+  /* display: block; */
+  width: 25px;
+  transform: rotate(45deg);
 }
 
 .upHeaderRight {
   grid-area: upHeaderRight;
   background-color: #333333;
+  grid-column: 13 / 22;
 }
 
 .menu {
   grid-area: menu;
+  /* justify-self: center; */
+  margin-left: 5px;
   color: #ffffff;
-  padding: 5px;
+  /* padding: 5px; */
+  grid-column: 2 / 7;
 }
 
 .logo {
   grid-area: logo;
   justify-self: center;
+  grid-column: 9 / 13;
 }
 
 .account {
   grid-area: account;
-  justify-self: end;
+  justify-self: center;
   color: #ffffff;
-  padding: 5px;
+  /* padding: 5px; */
+  grid-column: 15 / 17;
 }
 
 .cart {
   grid-area: cart;
+  justify-self: center;
   color: #ffffff;
-  padding: 5px;
+  /* padding: 5px; */
+  grid-column: 18 / 22;
 }
 
 .content {

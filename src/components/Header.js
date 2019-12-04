@@ -8,8 +8,10 @@ export default function Header() {
                 <div className='info'>
                     <a href='/about' className='topbar'>About Us |</a>
                     <a href='/contacts' className='topbar'> Contacts |</a>
-                    <a href='/track' className='topbar'> Track Order</a></div>                    
-                <div className='upMiddle'>AUTOPARTS FOR YOUR CAR</div>                
+                    <a href='/track' className='topbar'> Track Order</a></div>
+                
+                <div className='upMiddle'><div className='rotateRight'></div>AUTOPARTS FOR YOUR CAR<div className='rotateLeft'></div></div>
+                <div className='rotateLeft'></div>                
                 <div className='upHeaderRight'></div>                       
             {/* second line */}
                 <div className='menu'>Menu | Home | Shop | Blog | Account</div>
