@@ -23,7 +23,8 @@ body {
   color: #ffffff;
   font: 14px Roboto, sans-serif;
   /* margin-left: 5px; */
-  padding: 5px;
+  padding-top: 5px;
+  padding-left:5px;
   grid-column: 2 / 5;
 }
 
@@ -33,7 +34,7 @@ body {
   background-color: #006847;
   color: #ffffff;
   font: 14px Roboto, sans-serif;
-  padding: 5px;
+  padding-top: 5px;
   grid-column: 5 / 9;
 }
 
@@ -42,24 +43,47 @@ a.topbar {
 }
 
 .rotateRight {
-  background-color: aqua;
-  /* display: block; */
-  width: 25px;
-  transform: rotate(45deg);
+  grid-area: rotateRight;
+  justify-self: end;
+  grid-column: 3 / 4;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 15px solid;
+  border-color: #333333 #333333 white white;
   }
 
 .upMiddle {
   grid-area: upMiddle;
-  justify-self: center;
+  align-items: center;
+  justify-self: stretch;
   background-color: #ffffff;
   grid-column: 9 / 13;
 }
 
+.upMiddleContent {
+  display: grid;
+  grid-template-areas: "rotateLeft text rotateRight";
+  background-color: #ffffff;
+  grid-template-columns: 25px 1fr 25px);
+}
+
+.text {
+  grid-area: text;
+  grid-column: 2 / 3;
+  color: #999;
+  align-self: center;
+}
+
 .rotateLeft {
-  background-color: aqua;
-  /* display: block; */
-  width: 25px;
-  transform: rotate(45deg);
+  grid-area: rotateLeft;
+  justify-self: start;
+  grid-column: 1 / 2;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 15px solid;
+  border-color:#006847 white white #006847;;
 }
 
 .upHeaderRight {
