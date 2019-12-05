@@ -19,7 +19,7 @@ export default function Header() {
                 <div className='menu'>Меню | Домой | Магазин | Блог</div>
                 <div className='logo'>LOGO HERE</div>
                 <div className='account'>Профиль</div>
-                <div className='cart'>Корзина</div>
+                <div className='cart'>Корзина </div>
             </div>        
         )
 };
