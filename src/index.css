@@ -65,7 +65,7 @@ a.topbar {
   display: grid;
   grid-template-areas: "rotateLeft text rotateRight";
   background-color: #ffffff;
-  grid-template-columns: 25px 1fr 25px);
+  grid-template-columns: 25px 1fr 25px;
 }
 
 .text {
